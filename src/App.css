@@ -1,19 +1,254 @@
-.navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Basic main styling from Grok */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #344c36;
+  color: #dad3be;
+  font-family: "Roboto Flex", sans-serif;
 }
 
-.navbar .links {
-  margin: 10px;
-  width: 100%;
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1 0 auto;
+}
+
+h1 {
+  font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Google Fonts */
+
+/* .spicy-rice-regular {
+  font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+
+/* Navbar Styling */
+
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto Flex", sans-serif;
+  padding: 1% 2%;
+}
+
+.navbar h1 {
+  margin: 0;
+  margin-left: 2%;
+  font-size: 1.75rem;
+}
+
+.navbar .links {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: 2%;
+  font-size: 1.25em;
 }
 
 .navbar .links a {
   text-decoration: none;
   color: inherit;
+  margin-right: 5%;
+}
+
+/* Home/About Styling */
+
+.about {
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  background-color: #344c36; /* Matches your theme */
+  margin: auto;
+  max-width: 1200px; /* Limits width for larger screens */
+  width: 100%;
+  gap: 15%;
+}
+
+.about-image {
+  flex: 0 0 auto; /* Prevents image from stretching */
+}
+
+.about-image img {
+  width: 120%; /* Base size */
+  max-width: none; /* Remove cap */
+  height: auto;
+}
+
+.about-info {
+  flex: 1; /* Takes remaining space */
+  color: #dad3be;
+  text-align: left; /* Left-align text for readability */
+}
+
+.about-info h1 {
+  font-family: "Spicy Rice", serif;
+  font-size: 4rem;
+  margin: 0 0 10px 0;
+}
+
+.about-info p {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.about-info a {
+  color: inherit;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: #fdad1a;
+  font-weight: bold;
+  padding: 2px 6px; /* Clickable area */
+}
+
+.about-info a:hover {
+  background-color: #fdad1a; /* Highlight on hover */
+  color: #344c36; /* Contrast text */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column; /* Stack image and text on small screens */
+    text-align: center; /* Center text on mobile */
+    gap: 20px;
+  }
+
+  .about-image img {
+    width: 100%; /* Smaller image on mobile */
+  }
+
+  .about-info {
+    text-align: center; /* Center text */
+  }
+
+  .about-info h1 {
+    font-size: 2.5rem; /* Slightly smaller on mobile */
+  }
+
+  .about-info p {
+    font-size: 1rem; /* Slightly smaller text */
+  }
+}
+
+
+
+/* Portfolio Styling */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  min-height: 100vh;
+}
+
+.portfolio h1 {
+  font-size: 4em;
+  margin-bottom: 0;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap into rows */
+  justify-content: center; /* Centers the rows of cards */
+  gap: 20px; /* Space between cards */
+  width: 100%; /* Ensures it spans the container */
+}
+/* Project Section in Portfolio */
+
+.project {
+  border-radius: 12px;
+  background-color: #dad3be;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 16px 0;
+  max-width: 400px;
+  color: black;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.project h2 {
+  font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project a {
+  margin-right: 10px;
+  text-decoration: none;
+  background-color: #fdad1a;
+  padding: 2%;
+  border-radius: 10px;
+  color: black; 
+}
+
+.project a:hover {
+  font-weight: bold;
+  color: white;
+}
+
+/* Footer Styling from Grok */
+
+.footer {
+  background-color: black;
+  padding: 20px 0;
+  border-top: 1px solid #b7693b;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer-section {
+  margin: 10px 0;
+}
+
+.social-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.social-links a:hover {
+  color: #fdad1a; 
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+  }
 }
 

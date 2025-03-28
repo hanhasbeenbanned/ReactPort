@@ -4,12 +4,12 @@ const Navbar = () => {
     const location = useLocation();
     return (
         <nav className="navbar">
-            <h1>React Portfolio</h1>
+            <h1>HannahlBryant</h1>
             <div className="links">
-                <Link to="/" style= {{ color: location.pathname==='/'?'green':'black'}}>About</Link>
-                <Link to="/portfolio" style= {{ color: location.pathname==='/portfolio'?'green':'black'}}>Portfolio</Link>
-                <Link to="/resume" style= {{ color: location.pathname==='/resume'?'green':'black'}}>Resume</Link>
-                <Link to="/contact" style= {{ color: location.pathname==='/contact'?'green':'black'}}>Contact</Link>
+                <Link to="/" style= {{ color: location.pathname==='/'?'#fdad1a':'#dad3be'}}>About</Link>
+                <Link to="/portfolio" style= {{ color: location.pathname==='/portfolio'?'#fdad1a':'#dad3be'}}>Portfolio</Link>
+                <Link to="/resume" style= {{ color: location.pathname==='/resume'?'#fdad1a':'#dad3be'}}>Resume</Link>
+                <Link to="/contact" style= {{ color: location.pathname==='/contact'?'#fdad1a':'#dad3be'}}>Contact</Link>
             </div>
         </nav>
     );
