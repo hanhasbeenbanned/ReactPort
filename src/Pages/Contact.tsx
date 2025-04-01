@@ -8,7 +8,6 @@ const Contact = () => {
     message: string;
   }
 
-  // Initialize state with empty values
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -38,16 +37,12 @@ const Contact = () => {
     `Message:\n${formData.message}`
   );
   
-  // Your email address
   const email = 'hannahbry05@gmail.com';
   
-  // Construct the mailto URL
   const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
   
-  // Open the user's email client
   window.location.href = mailtoLink;
 
-  // Show thank you message and reset form
   setIsSubmitted(true);
   setFormData({ name: '', email: '', message: '' });
   
