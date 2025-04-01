@@ -40,7 +40,7 @@ This project is licensed under the MIT license.
 
   ## Live Link
   Check out the deployed portfolio and experience it live:
-  [Explore my portfolio here!]() 
+  [Explore my portfolio here!](https://hannahlbryant.netlify.app/) 
 
   ## Questions
   If you have any questions, feel free to contact me at [hannahbry05@gmail.com](mailto:hannahbry05@gmail.com).
