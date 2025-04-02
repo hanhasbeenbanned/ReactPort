@@ -22,6 +22,27 @@ const Portfolio = () => {
             githubLink: "https://github.com/hanhasbeenbanned/FocusFuel",
             deployedLink: "https://focusfuel.onrender.com/",
             image: "/images/FocusFuelPic.PNG"
+        },
+        {
+            title: "Filmbound",
+            description: "A collaborative app using two APIs—one for books, one for movies—that lets users check if a book has a movie adaptation (or vice versa) and save favorites for later.",
+            githubLink: "https://github.com/SMitchell92/Filmbound",
+            deployedLink: "https://filmbound.onrender.com/",
+            image: "/images/FilmBoundPic.PNG"
+        },
+        {
+            title: "CICD",
+            description: "This 10-question Python quiz reinforces syntax concepts with a clean workflow: feature branches → develop → main, auto-deploying to Render for smooth releases and testing.",
+            githubLink: "https://github.com/hanhasbeenbanned/CICD",
+            deployedLink: "https://cicd-7qpc.onrender.com/",
+            image: "/images/CICD.PNG"
+        },
+        {
+            title: "Html and CSS Portfolio",
+            description: "A simple portfolio website I made when I first got into coding. It's built with HTML and CSS animations, showcasing my early work and skills.",    
+            githubLink: "https://github.com/hanhasbeenbanned/hanhasbeenbanned",
+            deployedLink: "https://hanhasbeenbanned.github.io/hanhasbeenbanned/",
+            image: "/images/OldPortPic.PNG"
         }
     ];
     return (

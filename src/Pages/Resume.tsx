@@ -1,4 +1,13 @@
 const Resume = () => {
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/images/Profile'; // Adjust the path to your PDF file
+    link.download = 'Hannah_Bryant_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   return (
     <div className="resume-container">
       <header>
@@ -6,7 +15,8 @@ const Resume = () => {
         <p>Utah | Full-Stack Dev | hannahbry05@gmail.com</p>
         <p>
           <a href="/Contact" target="_blank" rel="noopener noreferrer">Contact</a> | 
-          <a href="https://linkedin.com/in/hannah-bryant-18a77024b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://linkedin.com/in/hannah-bryant-18a77024b" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+          <a style={{ cursor: 'pointer' }} onClick={handleDownload}>Download</a>
         </p>
       </header>
 
